@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+    body {
+   background-image: url(Pictures/bg1.jpg);
+   color: rgb(255, 255, 255);
+    }
+   .navbar-nav a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust the line height as needed */
+    background-color:#00FBA8; /* Color of the line */
+    transition: width 0.3s ease;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+.navbar-nav a:hover {
+    color: rgb(0, 255, 200) !important;
+}
+
+.navbar-nav a:visited {
+    color: rgb(255, 255, 255);
+}
+.esponsive-box{
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding-bottom: 3px;
+  text-align: center;
+}
+.responsive-box {
+  background: rgba(255, 255, 255, 0.1); /* Adjust opacity if needed */
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px); /* Adjust blur intensity */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+     
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+                <a class="nav-link" href="contact-us.html">ContactUs</a>
+            </li>
+            <li class="nav-item me-5">
+                <a class="nav-link" href="About.html">AboutUs</a>
+            </li>
+        </ul>
+        </div> 
+    </div>
+</nav>
+      <section id="About us">
+        <div class="container about us">
+          <div class="row about us mt-5 ">
+              <div class="col-sm-12">
+                  <div class="responsive-box ">
+                      <div class="display-5 display-sm-4 text-center">
+                          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                          <lord-icon
+                              src="https://cdn.lordicon.com/jnzhohhs.json"
+                              trigger="hover"
+                              colors="primary:#ffffff"
+                              style="width:50px;height:40px">
+                          </lord-icon>About us
+                      </div>
+                      <p>
+
+                        Welcome to CodeX, a dynamic hub of technological innovation since our inception in 2021. At CodeX, we take pride in being a collective of highly skilled full-stack and network engineers, driven by a shared commitment to pushing the boundaries of technology. Our diverse portfolio stands as a testament to our excellence, with a focus on crafting exceptional mobile applications, websites, and desktop applications.
+                        
+                        Our team is dedicated to staying at the forefront of technological advancements, ensuring that our clients receive solutions that not only meet but exceed their expectations. With a passion for innovation and a track record of successful projects, CodeX is your trusted partner in navigating the ever-evolving landscape of technology.
+                        
+                        Join us on a journey where every line of code tells a story of innovation, creativity, and unparalleled technical expertise. At CodeX, we don't just embrace technology; we redefine it.
+                  </div><!-- End responsive-box -->
+              </div><!-- End col-sm-12 -->
+          </div><!-- end of row -->
+          <div class="row">
+            <div class="col-sm-6 mt-3">
+              <div class="responsive-box custom-margin-top">
+                <div class="display-5 display-sm-4">
+                  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/yqiuuheo.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#b4b4b4"
+                    style="width:30px;height:40px">
+                  </lord-icon>
+                  Mission
+                </div>
+                <p>CodeX's mission is clear - deliver cutting-edge solutions in full-stack and network engineering. We're dedicated to providing robust, scalable tech solutions, empowering businesses for success in the digital era.</p>
+              </div> <!--End of responsive-box1-->
+            </div><!--End of col-sm-6 -->
+          
+            <div class="col-sm-6 mt-3">
+              <div class="responsive-box custom-margin-top ">
+                <div class="display-5 display-sm-4">
+                  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/yqiuuheo.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#b4b4b4"
+                    style="width:30px;height:40px">
+                  </lord-icon>
+                  Vision
+                </div>
+                <p>At CodeX, our vision is global recognition as leaders in tech solutions. We're shaping a future where businesses seamlessly integrate advanced technology. Through innovation and collaboration, we're your go-to partner for transformative tech solutions.
+
+                  Join us at CodeX, where technology meets excellence in every project we undertake.</p>
+              </div><!--End of responsive box2-->
+            </div><!--End of col-sm-6 -->
+          </div><!--end of row -->
+          
+        
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

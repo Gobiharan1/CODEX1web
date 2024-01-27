@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact.us</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+body{
+  background-image: url(Pictures/bg3.jpg);
+  background-size: cover;
+  color: rgb(0, 0, 0);
+}
+    .container-fluid{
+    background-color: #000;
+    }
+    
+    .navbar-nav a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust the line height as needed */
+    background-color:#00FBA8; /* Color of the line */
+    transition: width 0.3s ease;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+.navbar-nav a:hover {
+    color: rgb(0, 255, 200) !important;
+}
+
+.navbar-nav a:visited {
+    color: rgb(255, 255, 255);
+}
+/* Start of social meadia accounts */
+html {
+  box-sizing: border-box;
+  background: #f3f3f3;
+}
+.connect {
+    margin-top: -150px; 
+    
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  
+}
+
+.clip {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.svg--source {
+  display: none
+}
+
+.svg--icon {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  display: block;
+  margin: 0.5 auto;
+  fill: currentColor
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.share {
+  width: 3.5rem;
+  height: 3.5rem;
+  float: left;
+  margin: .0.5rem 1rem 0.5rem 0;
+  color: #353c4a;
+  border: 0.125rem solid #f3f3f3;
+  box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+  border-radius: 50%;
+  transition: 250ms;
+  
+   &:last-child {
+    margin-right: 0
+  }
+  
+  &:hover,
+  &:focus {
+    background: #f1f1f1;
+  }
+  
+  &:focus {
+    outline-color: inherit;
+  }
+}
+
+.twitter {
+  &:hover,
+  &:focus {
+    color: #00ACED;
+    box-shadow: 0 0 24px 0 #00ACED
+  }
+}
+.linkedin {
+  &:hover,
+  &:focus {
+    color: #00aeff;
+    box-shadow: 0 0 24px 0 #0856bd
+  }
+}
+.facebook {
+  &:hover,
+  &:focus {
+    color: #3b5998;
+    box-shadow: 0 0 24px 0 #3b5998
+  }
+}
+
+  .nav-link lord-icon {
+      width: 40px;
+      height: 20px;
+      transition: transform 0.3s ease-out;
+    }
+
+    /* Define styles for the hover effect on the button */
+    .nav-link:hover lord-icon {
+      transform: scale(1.2);
+    }
+    .footer{
+      background-color: #222222;
+    }
+/*End of social media accounts*/
+.card{
+      background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(10px);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          padding-bottom: 3px;
+          text-align: center; 
+          color: white;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Pictures/Logo_.png" height="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item me-5">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                  <a class="nav-link" href="contact-us.html">ContactUs</a>
+              </li>
+              <li class="nav-item me-5">
+                  <a class="nav-link" href="About.html">AboutUs</a>
+              </li>
+          </ul>
+          </div> 
+      </div>
+  </nav>
+      
+      <!--Forms start-->
+      <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-3 ">
+                <div class="card d-flex align-items-center justify-content-center mt-5">
+                    <h1 class="text-center mb-4">Contact Us</h1>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control form-control-sm" id="name" name="name" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control form-control-sm" id="email" name="email" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comment/Question:</label>
+                            <textarea class="form-control form-control-sm" id="comment" name="comment" rows="4" required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-danger btn-sm ">Submit</button>
+                    </form>
+                </div><!-- End of card-->
+            </div><!-- End of col-->
+             <!--Box 2 countact us-->
+             <div class="col-md-9">
+             <div class="card mt-5">
+              <h1 class="text-center">For more info</h1>
+              <hr>
+               <p>Phone number (Hot line) - <strong>+94 76-469-1651</strong> </p>
+               <p>Phone number (Hot line) - <strong>+94 76-114-0481</strong> </p> 
+               <p>Phone number (Hot line) - <strong>+94 76-396-8883</strong> </p>     
+               <p>Email (Hot line) - <strong>codexcomapny07@gmail.com</strong> </p>
+               <p><strong>Feel free to meet with us directly!</strong> We welcome face-to-face interactions. Please reach out to schedule an appointment, or visit our o  ffice during our business hours. We look forward to meeting you in person!"</p>  
+               <!-- TAble start-->
+                    <!-- Table start-->
+              <table class="table">
+                <tr class="card">
+                   <td ><img src="Pictures/location01.jpg" alt="" style="height: 20px;"> B34,Thimbiriyawa,Kandy,Sri Lanka</td>
+               </tr>
+               <tr class="card">
+                   <td><img src="Pictures/location01.jpg" alt="" style="height: 20px;">B2,Pilessa,Kandy,Sri Lanka </td>
+               </tr>
+              
+            </table>
+<!-- Table end-->
+
+             <!-- TAble end-->
+             </div>
+            </div><!--End of col-->
+        </div>
+   <!-- end Box 2 countact us-->
+        </div><!-- End of row-->
+    </div><!-- End of container-->
+
+
+     <!-- footer part -->
+     <footer class="footer">
+      <div class="container">
+        <div class="row mb-5 pb-3 no-gutters">
+          <div class="col-md-4 mb-md-0 mb-1 d-flex">
+            <div class="con con-1 w-100 py-2">
+              <div class="con-info w-100 text-center">
+                  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/wzrwaorf.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                  </lord-icon>
+                  <div class="text">
+                  <span class="text-white">(+94) 76469 1651</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-5 mb-4 d-flex">
+            <div class="con con-2 w-100 py-2">
+              <div class="con-info w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class= <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ebjjjrhp.json"
+                        trigger="hover"
+                        colors="primary:#ffffff,secondary:#fffff"
+                        style="width:50px;height:50px">
+                    </lord-icon></span>
+                </div>
+                <div class="text">
+                  <span class="text-white">codexcomapny07@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div><div class="col-md-4 mb-md-0 mb-4 d-flex">
+            <div class="con con-2 w-100 py-2">
+              <div class="con-info w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class= <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/tdtlrbly.json"
+                        trigger="hover"
+                        colors="primary:#ffffff,secondary:#ffffff"
+                        style="width:50px;height:50px">
+                    </lord-icon></span>
+                </div>
+                <div class="text">
+                  <span class="text-white"> B34, Thimbiriyawa, Kandy, Sri Lanka</span>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+         <!-- Start of social media -->
+         <svg class="svg--source" width="" height="" aria-hidden="true">
+    
+          <symbol id="svg--twitter" viewbox="0 -7 15 30">
+            <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
+            />
+          </symbol>
+           
+          <symbol id="svg--linkedin" viewbox="0 -7 15 30">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></symbol>
+    
+          <symbol id="svg--facebook" viewbox="0 -7 16 30">
+            <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+          </symbol>
+    
+        
+        </svg>
+        
+        <div class="wrapper">
+        <div class="connect">
+        
+          <a href="https://twitter.com/Codex8447496692" class="share twitter">
+            <svg role="presentation" class="svg--icon">
+              <use xlink:href="#svg--twitter" />
+            </svg>
+            <span class="clip">TWITTER</span>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/code-x-731b912b0/"class="share linkedin">
+            <svg role="presentation" class="svg--icon">
+              <use xlink:href="#svg--linkedin" />
+            </svg>
+            <span class="clip">LINKEDIN</span>
+          </a>
+    
+          <a href="https://www.facebook.com/code.x.566253?mibextid=9R9pXO" rel="author" class="share facebook">
+            <svg role="presentation" class="svg--icon">
+              <use xlink:href="#svg--facebook" />
+              <span class="clip">FACEBOOK</span>
+            </svg>
+          </a>
+        </div>
+        </div>
+          
+        </div>
+        <!-- End of social media -->
+        <div class="container-fluid ml-0 d-flex justify-content-between text-center">
+          <div class="col-md-3 mb-md-0 mb-4">
+              <a href="index.html" class="text-light text-decoration-none">Home</a>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-4">
+              <a href="contact-us.html" class="text-light text-decoration-none">Contact us</a>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-4">
+              <a href="About.html" class="text-light text-decoration-none">About us</a>
+          </div>
+    
+      </div>
+       
+    
+          <div class="row mt-6 pt-4 border-top">
+              <div class="col-md-6 col-lg-10 mb-md-0 mb-4">
+                  <p class="copyright mb-5 text-center text-white">
+                    ©Copyright  All rights reserved. The CodeX name, logos, and related marks are trademarks of CodeX, Inc
+                  </p>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+        <!--Forms end-->
+   <script src="js/bootstrap.js"></script> 
+   <script>document.getElementById("contactForm").addEventListener("submit", function (event) {
+    // Perform validation here
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var comment = document.getElementById("comment").value;
+
+    if (name.trim() === "" || email.trim() === "" || comment.trim() === "") {
+        alert("Please fill in all required fields.");
+        event.preventDefault();
+    } else if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault();
+    }
+});
+
+function validateEmail(email) {
+    // Regular expression for basic email validation
+    var regex = /^\S+@\S+\.\S+$/;
+    return regex.test(email);
+}
+</script>
+</body>
+</html>
